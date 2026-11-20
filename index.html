@@ -1830,7 +1830,7 @@ function shareText() {
     const sorted = [...boats].sort((a, b) => (a.finishTime === null ? 1e9 : a.finishTime) - (b.finishTime === null ? 1e9 : b.finishTime));
     head = p.out ? '『' + p.name + '』は' + outPhrase(p) : '『' + p.name + '』でCPU戦（' + DIFFS[difficulty].name + '）' + (sorted.indexOf(p) + 1) + '位！';
   }
-  return '🍃' + head + '\n\n#用水路グランプリ #ブラウザゲーム #インディーゲーム\n\nhttps://utimadev.itch.io/yosuiro-gp';
+  return '🍃' + head + '\n\n#用水路グランプリ #ブラウザゲーム #インディーゲーム\n\nhttps://sa008ta.github.io/yosuiro-gp/';
 }
 function shareResult() {
   try { document.getElementById('shareBtn').href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText()); } catch (e) {}
